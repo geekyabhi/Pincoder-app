@@ -94,6 +94,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log("Starting host 3001")
+app.listen(port,()=>{
+    console.log("Starting host "+port)
 })
