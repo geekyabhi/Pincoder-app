@@ -10,8 +10,8 @@ const pincodefunction=(pincode,callback)=>{
     else{
         callback(undefined,{
             mainmessage:response.body[0].Message,
-            list:"This is a good app"
-            // list:response.body[0].PostOffice[0]
+            // list:"This is a good app"
+            list:response.body[0].PostOffice
         })
     }
 })

@@ -40,26 +40,21 @@ app.get('/help',(req,res)=>{
 })
 
 app.get('/code',(req,res)=>{
-    // if(!req.query.search){
-    //     return  res.send({
-    //         error:'Provide the search term'
-    //     })
-    // }
-    // pincodefunction(req.query.search,(error,{message,list}={})=>{
-    //     if(error){
-    //         return {error:error}
-    //     }else{
-    //         return{
-    //             message:message,
-    //             list:list
-    //         }
-    //     }
-    // })
-    if(!req.query.location){
-        return res.send({
-            error:'Provide the location'
+    if(!req.query.pin && !req.query.location){
+        return  res.send({
+            error:'Provide the search term'
         })
     }
+    if(req.query.pin){
+    pincodefunction(req.query.pin,(error,data)=>{
+        if(error){
+            return res.send ({error:error})
+        }else{
+            return res.send (data)
+        }
+    })
+    }
+    if(req.query.location){
     locationfunction(req.query.location,(error,data)=>{
         if(error){
             return res.send({error:error})
@@ -67,6 +62,7 @@ app.get('/code',(req,res)=>{
             return res.send(data)
         }
     })
+}
 })
 
 app.get('/about/*',(req,res)=>{
@@ -94,6 +90,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(port,()=>{
+app.listen(port ,()=>{
     console.log("Starting host "+port)
 })

@@ -16,7 +16,7 @@ pincodeform.addEventListener('submit',(e)=>{
     mainmessage.textContent='Loading...'
     loader.style.display='block'
     if(pincode){
-    fetch('https://api.postalpincode.in/pincode/'+pincode).then(response=>{
+    fetch('/code?pin='+pincode).then(response=>{
         loader.style.display="none"
         postlist.style.display="block";
         response.json().then(data=>{
@@ -24,8 +24,8 @@ pincodeform.addEventListener('submit',(e)=>{
                 console.log(data.error)
             }else{
                 console.log(data)
-                mainmessage.textContent=data[0].Message
-                const officelist=data[0].PostOffice
+                mainmessage.textContent=data.mainmessage
+                const officelist=data.list
                 
                 postunorderlist.innerHTML=""
                 officelist.forEach(element => {
@@ -47,7 +47,7 @@ locationform.addEventListener('submit',(e)=>{
     loader.style.display='block'
     mainmessage.textContent='Loading...'
     if(location){
-    fetch('https://api.postalpincode.in/postoffice/'+location).then(response=>{
+    fetch('/code?location='+location).then(response=>{
         loader.style.display="none"
         postlist.style.display="block";
         response.json().then(data=>{
@@ -55,8 +55,8 @@ locationform.addEventListener('submit',(e)=>{
                 console.log(data.error)
             }else{
                 console.log(data)
-                mainmessage.textContent=data[0].Message
-                const officelist=data[0].PostOffice
+                mainmessage.textContent=data.mainmessage
+                const officelist=data.list
   
                 postunorderlist.innerHTML=""
                 officelist.forEach(element => {
