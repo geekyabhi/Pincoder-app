@@ -1,0 +1,27 @@
+.section-2 .post-list{
+    display: block;
+    text-align: center;
+}
+.section-2 .post-list .main-message {
+    font-size: 30px;
+    font-weight: 300;
+    /* text-decoration: underline; */
+}
+.section-2 .post-list ul{
+    margin-top: 30px;
+    list-style: none;
+    width:94%;
+
+}
+.section-2 .post-list ul li{
+    padding:20px;
+    border-top:1px solid rgb(196, 192, 192);
+}
+.section-2 .post-list ul li:last-child{
+    border-bottom:1px solid rgb(196, 192, 192);
+}
+.section-2 .post-list .loader-area{
+    text-align: center;
+    margin-top:40px;
+    margin:auto;
+}

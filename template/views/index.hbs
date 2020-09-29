@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pincoder</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/animations.css">
+        <link rel="stylesheet" href="./css/dynamic.css">
+        <link rel="stylesheet" href="./css/loader.css">
+        <link rel="stylesheet" href="/css/ionicons-2.0.1/css/ionicons.min.css">
+        <link rel="icon" href="/img/pin.png">
+    </head>
+    <body>
+        <div class="section-0">
+            <div class="company-name">
+                <h1> <span id="rotation"><i class="ion-ios-world-outline"></i></span><span class="color-1">  Pin</span><span class="color-2">coder</span></h1>
+            </div>
+            <div class="options">
+                <div class="option-items"><a href="/" class="ele">Home</a></div>
+                <div class="option-items"><a href="about" class="ele">About</a></div>
+                <div class="option-items"><a href="help" class="ele">Help</a></div>
+            </div>
+        </div>
+        <div class="section-1">
+            <div class="middle-term top-heading">
+                {{>header}}            
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="middle-term middle-heading">
+                <h2>Enter pincode or location</h2>
+            </div>
+            <div class="middle-term forms">
+                <div class="form-1">
+                    <form id='locationform'>
+                        <input placeholder="Enter Location" id='inputlocation'>
+                        <button><i class="ion-ios-search"></i></button>
+                    </form>
+                </div>
+                <div class="form-2">
+                    <form id='pincodeform'>
+                        <input placeholder="Enter Pincode" id='inputpincode'>
+                        <button><i class="ion-ios-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="post-list">
+                <div class="main-message"><h2></h2></div>
+                <div id="loader-1" class="loader-area"></div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div class="section-3">
+            <div class="middle-term last-heading">
+                {{>footer}}
+            </div>
+        </div>
+        <script src="./js/fetch.js"></script>
+    </body>
+</html>

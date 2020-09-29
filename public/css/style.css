@@ -1,0 +1,193 @@
+/* red-theme-color:  rgb(173, 2, 2); */
+/* blue-theme-color: rgb(24, 74, 238); */
+body{
+    font-family: "Lato", sans-serif;
+    font-weight:400;
+}
+.section-0{
+    background-color: #000;
+}
+.options{
+    margin-right:20px;
+    float: right;
+}
+.option-items{
+    margin:20px 30px 20px 30px;
+    display: inline-block;
+    /* margin: 10px; */
+}
+.option-items a{
+    /* color:#fff; */
+    font-size: 20 px;
+    color:#fff;
+    text-transform: none;
+    border-bottom:1px solid transparent;
+    text-decoration: none;
+    transition: all .2s;
+}
+.option-items:hover a{
+    color: rgb(24, 74, 238);
+    border-bottom:1px solid rgb(24, 74, 238);
+    /* color: rgb(173, 2, 2); */
+    /* border-bottom:1px solid rgb(173, 2, 2); */
+}
+.section-1{
+    color:rgb(24, 74, 238);
+    /* color:rgb(173, 2, 2); */
+    background-color: #000;
+    border:0.1px solid #000;
+    border-bottom:3px solid rgb(24, 74, 238);
+    /* border-bottom:3px solid rgb(173, 2, 2); */
+    position: relative;
+}
+.ion-ios-world-outline{
+    font-size: 30px;
+    color:rgb(24, 74, 238);
+    /* color:rgb(173, 2, 2); */
+}
+.top-heading{
+    margin-top:47px;
+}
+.top-heading h1{
+    font-size: 55px;
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+
+}
+.section-2{
+    /* color:rgb(173, 2, 2); */
+    color:rgb(24, 74, 238);
+    /* height: 50vh; */
+    
+    /* border-bottom:3px solid rgb(173, 2, 2); */
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+.middle-heading{
+    margin-top: 50px;
+}
+.middle-heading h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing:20px ;
+}
+.forms{
+    max-width: 650px;
+    margin:auto;
+    margin-top:30px;
+}
+.forms .ion-ios-search{
+    font-size: 20px;
+}
+
+.form-1,.form-2{
+    margin:20px;
+}
+.form-1 #inputlocation , .form-2 #inputpincode{
+    width:60%;
+    height:30px;
+    border-radius: 0;
+    border: 0.5px solid #000;
+}
+.form-1 #inputlocation:focus , .form-2 #inputpincode:focus{
+    outline: none;
+}
+
+.form-1 button , .form-2 button{
+    height:36px;
+    margin-left: 10px;
+    width: 13%;
+    border: 0;
+    /* background-color: rgb(173, 2, 2); */
+    background-color: #000;
+    color:#fff;
+    box-shadow: 0 10px 20px rgb(116, 114, 114);
+    transition: all .2s;
+}
+.form-1 button:hover , .form-2 button:hover{
+    background-color: rgb(24, 74, 238);
+    /* background-color: rgb(173, 2, 2); */
+    box-shadow: 0 20px 20px rgb(141, 138, 138);
+    transform: translateY(-2px);
+}
+.form-1 button:focus , .form-2 button:focus{
+    background-color: rgb(24, 74, 238);
+    /* background-color: rgb(173, 2, 2); */
+    box-shadow: 0 20px 20px rgb(141, 138, 138);
+    transform: translateY(-1px);
+}
+.section-3{
+    margin-bottom: 0;
+    border-top:3px solid  rgb(24, 74, 238);
+    /* border-top:3px solid rgb(173, 2, 2); */
+    border-bottom:0.5px solid #000;
+    /* height: 7vh; */
+    background-color: #000;
+    padding-top: 3px;
+}
+.section-3 .last-heading{
+    color:rgb(24, 74, 238);
+    /* color: rgb(173, 2, 2); */
+}
+.company-name{
+    display: inline-block;
+    color: #fff;
+    margin-left:50px;
+    font-size:15px;
+}
+.company-name h1{
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.company-name h1 .color-1{
+    color:rgb(24, 74, 238);
+}
+.company-name h1 .color-2{
+    color:#fff;
+}
+.middle-term{
+    text-align: center;
+}
+.last-heading{
+    margin-bottom: 0px;
+}
+.last-heading p{
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.about-material{
+    margin-bottom:20px;
+}
+.column-1{
+    display: inline-block;
+    width:500px;
+    /* height:260px; */
+    box-sizing: border-box;
+    float:left;
+    /* border:0.5px solid black; */
+    margin: 25px;
+}
+.imgs{
+    width:450px;
+    /* height:250px; */
+}
+.column-2{
+    display: inline-block;
+    box-sizing: border-box;
+    width:700px;
+    margin: 25px;
+    text-align: left;
+}
+.column-2 p{
+    font-size: 25px;
+}
+.help-material{
+
+}
+.help-material p{
+    font-size: 25px;;
+}
