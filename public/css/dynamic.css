@@ -14,14 +14,33 @@
 
 }
 .section-2 .post-list ul li{
+    text-align: center ;
     padding:20px;
-    border-top:1px solid rgb(196, 192, 192);
+    /* border-top:1px solid rgb(196, 192, 192); */
+}
+.section-2 .post-list .list-card{
+    display:inline-block;
+    /* color:#fff; */
+    /* background-color: black; */
+    font-weight: 300;
+    font-size: 20px;
+    border:1px solid rgb(24, 74, 238);
+    text-align: left !important;
+    padding:20px;
+    width:500px;
+    margin:auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.562);
+}
+.section-2 .post-list .list-card h3{
+    font-size: 30px;
+    color: black;
+    font-weight: 300;
 }
 .section-2 .post-list ul li:last-child{
-    border-bottom:1px solid rgb(196, 192, 192);
+    /* border-bottom:1px solid rgb(196, 192, 192); */
 }
 .section-2 .post-list .loader-area{
-    text-align: center;
+    text-align: left;
     margin-top:40px;
     margin:auto;
 }

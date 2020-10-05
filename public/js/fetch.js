@@ -30,8 +30,34 @@ pincodeform.addEventListener('submit',(e)=>{
                 postunorderlist.innerHTML=""
                 officelist.forEach(element => {
                     var newListItem=document.createElement('li')
-                    var newListItemText=document.createTextNode('Name : '+element.Name+'-----Branch Type : '+element.BranchType+'-----District : '+element.District+'-----Pincode : '+element.Pincode+'-----Region : '+element.Region+'-----State : '+element.State)    
-                    newListItem.appendChild(newListItemText)
+                    var  newDiv=document.createElement('div')
+                    newDiv.className='list-card'
+                    
+                    var name=document.createElement('h3')
+                    name.textContent='Name : '+element.Name
+
+                    var branch=document.createElement('p')
+                    branch.textContent='Branch Type : '+element.BranchType
+
+                    var district=document.createElement('p')
+                    district.textContent='District : '+element.District
+
+                    var pincode=document.createElement('p')
+                    pincode.textContent='Pincode : '+element.Pincode
+
+                    var region=document.createElement('p')
+                    region.textContent='Branch Type : '+element.BranchType
+
+                    var state=document.createElement('p')
+                    state.textContent='Branch Type : '+element.State
+
+                    newDiv.appendChild(name)
+                    newDiv.appendChild(branch)
+                    newDiv.appendChild(district)
+                    newDiv.appendChild(pincode)
+                    newDiv.appendChild(region)
+                    newDiv.appendChild(state)
+                    newListItem.appendChild(newDiv)
                     postunorderlist.appendChild(newListItem)
                 });
             }
@@ -61,8 +87,34 @@ locationform.addEventListener('submit',(e)=>{
                 postunorderlist.innerHTML=""
                 officelist.forEach(element => {
                     var newListItem=document.createElement('li')
-                    var newListItemText=document.createTextNode('Name : '+element.Name+'-----Branch Type : '+element.BranchType+'-----District : '+element.District+'-----Pincode : '+element.Pincode+'-----Region : '+element.Region+'-----State : '+element.State)    
-                    newListItem.appendChild(newListItemText)
+                    var  newDiv=document.createElement('div')
+                    newDiv.className='list-card'
+                    
+                    var name=document.createElement('h3')
+                    name.textContent='Name : '+element.Name
+
+                    var branch=document.createElement('p')
+                    branch.textContent='Branch Type : '+element.BranchType
+
+                    var district=document.createElement('p')
+                    district.textContent='District : '+element.District
+
+                    var pincode=document.createElement('p')
+                    pincode.textContent='Pincode : '+element.Pincode
+
+                    var region=document.createElement('p')
+                    region.textContent='Branch Type : '+element.BranchType
+
+                    var state=document.createElement('p')
+                    state.textContent='Branch Type : '+element.State
+
+                    newDiv.appendChild(name)
+                    newDiv.appendChild(branch)
+                    newDiv.appendChild(district)
+                    newDiv.appendChild(pincode)
+                    newDiv.appendChild(region)
+                    newDiv.appendChild(state)
+                    newListItem.appendChild(newDiv)
                     postunorderlist.appendChild(newListItem)
                 });
             }
