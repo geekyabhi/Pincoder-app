@@ -1,3 +1,11 @@
+:root{
+    --blue:rgb(24, 74, 238);
+    --red:rgb(173, 2, 2);
+    --green:rgb(7, 241, 46);
+    --themecolor:var(--blue);
+}
+
+
 .section-2 .post-list{
     display: block;
     text-align: center;
@@ -24,7 +32,7 @@
     /* background-color: black; */
     font-weight: 300;
     font-size: 20px;
-    border:1px solid rgb(24, 74, 238);
+    border:1px solid var(--themecolor);
     text-align: left !important;
     padding:20px;
     width:500px;

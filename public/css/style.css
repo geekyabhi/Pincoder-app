@@ -1,5 +1,10 @@
-/* red-theme-color:  rgb(173, 2, 2); */
-/* blue-theme-color: rgb(24, 74, 238); */
+:root{
+    --blue:rgb(24, 74, 238);
+    --red:rgb(173, 2, 2);
+    --green:rgb(7, 241, 46);
+    --themecolor:var(--blue);
+}
+
 body{
     font-family: "Lato", sans-serif;
     font-weight:400;
@@ -26,24 +31,19 @@ body{
     transition: all .2s;
 }
 .option-items:hover a{
-    color: rgb(24, 74, 238);
-    border-bottom:1px solid rgb(24, 74, 238);
-    /* color: rgb(173, 2, 2); */
-    /* border-bottom:1px solid rgb(173, 2, 2); */
+    color: var(--themecolor);
+    border-bottom:1px solid var(--themecolor);
 }
 .section-1{
-    color:rgb(24, 74, 238);
-    /* color:rgb(173, 2, 2); */
+    color:var(--themecolor);
     background-color: #000;
     border:0.1px solid #000;
-    border-bottom:3px solid rgb(24, 74, 238);
-    /* border-bottom:3px solid rgb(173, 2, 2); */
+    border-bottom:3px solid var(--themecolor);
     position: relative;
 }
 .ion-ios-world-outline{
     font-size: 30px;
-    color:rgb(24, 74, 238);
-    /* color:rgb(173, 2, 2); */
+    color:var(--themecolor);
 }
 .top-heading{
     margin-top:47px;
@@ -57,11 +57,10 @@ body{
 
 }
 .section-2{
-    /* color:rgb(173, 2, 2); */
-    color:rgb(24, 74, 238);
+    color:var(--themecolor);
     /* height: 50vh; */
     
-    /* border-bottom:3px solid rgb(173, 2, 2); */
+    /* border-bottom:3px solid var(--themecolor); */
     background-color: #fff;
     padding-bottom: 50px;
 }
@@ -100,37 +99,33 @@ body{
     margin-left: 10px;
     width: 13%;
     border: 0;
-    /* background-color: rgb(173, 2, 2); */
+    /* background-color: var(--themecolor); */
     background-color: #000;
     color:#fff;
     box-shadow: 0 10px 20px rgb(116, 114, 114);
     transition: all .2s;
 }
 .form-1 button:hover , .form-2 button:hover{
-    background-color: rgb(24, 74, 238);
-    /* background-color: rgb(173, 2, 2); */
+    background-color: var(--themecolor);
     box-shadow: 0 20px 20px rgb(141, 138, 138);
     transform: translateY(-2px);
 }
 .form-1 button:focus , .form-2 button:focus{
     outline: none;
-    background-color: rgb(24, 74, 238);
-    /* background-color: rgb(173, 2, 2); */
+    background-color: var(--themecolor);
     box-shadow: 0 20px 20px rgb(141, 138, 138);
     transform: translateY(-1px);
 }
 .section-3{
     margin-bottom: 0;
-    border-top:3px solid  rgb(24, 74, 238);
-    /* border-top:3px solid rgb(173, 2, 2); */
+    border-top:3px solid  var(--themecolor);
     border-bottom:0.5px solid #000;
     /* height: 7vh; */
     background-color: #000;
     padding-top: 3px;
 }
 .section-3 .last-heading{
-    color:rgb(24, 74, 238);
-    /* color: rgb(173, 2, 2); */
+    color:var(--themecolor);
 }
 .company-name{
     display: inline-block;
@@ -143,7 +138,7 @@ body{
     font-weight: 400;
 }
 .company-name h1 .color-1{
-    color:rgb(24, 74, 238);
+    color:var(--themecolor);
 }
 .company-name h1 .color-2{
     color:#fff;

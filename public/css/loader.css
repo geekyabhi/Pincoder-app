@@ -1,8 +1,15 @@
+:root{
+  --blue:rgb(24, 74, 238);
+  --red:rgb(173, 42, 2);
+  --green:rgb(7, 241, 46);
+  --themecolor:var(--blue);
+}
+
 #loader-1{
     border: 10px solid #000;
     border-radius: 50%;
-    border-top: 10px solid rgb(24, 74, 238);
-    border-bottom: 10px solid rgb(24, 74, 238);
+    border-top: 10px solid var(--themecolor);
+    border-bottom: 10px solid var(--themecolor);
     border-right: 10px solid #000;
     border-left: 10px solid #000;
     margin-top:20px;
