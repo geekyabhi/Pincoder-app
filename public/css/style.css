@@ -111,8 +111,14 @@ body{
     transform: translateY(-2px);
 }
 .form-1 button:focus , .form-2 button:focus{
+<<<<<<< HEAD
     outline: none;
     background-color: var(--themecolor);
+=======
+    outline:none;
+    background-color: rgb(24, 74, 238);
+    /* background-color: rgb(173, 2, 2); */
+>>>>>>> af4ce0bdb7daea685b0c182384a5e65ea63a3397
     box-shadow: 0 20px 20px rgb(141, 138, 138);
     transform: translateY(-1px);
 }
